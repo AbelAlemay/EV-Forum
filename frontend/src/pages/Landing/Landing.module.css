@@ -156,3 +156,17 @@
     margin: 0 auto 18px;
   }
 }
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding-top: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .heroTitle {
+    font-size: 28px;
+  }
+  .card {
+    padding: 24px 16px;
+  }
+}

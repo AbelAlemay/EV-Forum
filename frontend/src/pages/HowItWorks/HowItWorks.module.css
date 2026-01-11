@@ -10,6 +10,18 @@
   }
 }
 
+@media (max-width: 480px) {
+  .page {
+    margin-top: 40px;
+    padding: 0 16px;
+    max-width: 100%;
+  }
+  .h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+  }
+}
+
 .backBtn {
   display: flex;
   align-items: center;

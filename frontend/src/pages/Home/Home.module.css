@@ -121,3 +121,18 @@
     gap: 12px;
   }
 }
+
+@media (max-width: 480px) {
+  .page {
+    margin-top: 40px;
+    padding: 0 12px;
+  }
+  .search {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .askBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -10,6 +10,25 @@
   }
 }
 
+@media (max-width: 480px) {
+  .page {
+    margin-top: 40px;
+    padding: 0 12px;
+  }
+  .item {
+    padding: 12px;
+    gap: 10px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
 .backBtn {
   display: flex;
   align-items: center;

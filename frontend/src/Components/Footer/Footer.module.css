@@ -37,3 +37,18 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 16px;
+    gap: 20px;
+    text-align: center;
+  }
+  .social {
+    justify-content: center;
+  }
+  .footer img {
+    display: block;
+    margin: 0 auto;
+  }
+}

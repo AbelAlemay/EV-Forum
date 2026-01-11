@@ -20,7 +20,14 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/api-docs" element={<ApiDocs />} />
+          <Route
+            path="/api-docs"
+            element={
+              <ProtectedRoute>
+                <ApiDocs />
+              </ProtectedRoute>
+            }
+          />
 
           <Route
             path="/home"
