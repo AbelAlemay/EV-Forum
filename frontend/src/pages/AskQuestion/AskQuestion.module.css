@@ -4,6 +4,12 @@
   padding: 0 16px;
 }
 
+@media (max-width: 768px) {
+  .page {
+    margin-top: 80px;
+  }
+}
+
 .backBtn {
   display: flex;
   align-items: center;

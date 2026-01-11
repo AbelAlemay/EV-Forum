@@ -144,5 +144,15 @@
 @media (max-width: 980px) {
   .wrapper {
     grid-template-columns: 1fr;
+    padding-top: 60px;
+  }
+  .card {
+    margin-left: 0;
+  }
+  .right {
+    text-align: center;
+  }
+  .heroText {
+    margin: 0 auto 18px;
   }
 }

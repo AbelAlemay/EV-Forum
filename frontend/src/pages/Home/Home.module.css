@@ -112,6 +112,9 @@
 }
 
 @media (max-width: 900px) {
+  .page {
+    margin-top: 80px;
+  }
   .topRow {
     flex-direction: column;
     align-items: flex-start;
