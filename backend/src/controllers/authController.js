@@ -3,6 +3,10 @@ import jwt from "jsonwebtoken";
 import crypto from "crypto";
 import db from "../config/db.js"; // from TADESSE db.js
 
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 // POST /api/user/register
 export async function register(req, res) {
   try {
@@ -12,6 +16,13 @@ export async function register(req, res) {
       return res.status(400).json({
         error: "Bad Request",
         message: "Please provide all required fields",
+      });
+    }
+
+    if (!isValidEmail(email)) {
+      return res.status(400).json({
+        error: "Bad Request",
+        message: "Please provide a valid email address",
       });
     }
 
@@ -63,6 +74,13 @@ export async function login(req, res) {
       return res.status(400).json({
         error: "Bad Request",
         message: "Please provide all required fields",
+      });
+    }
+
+    if (!isValidEmail(email)) {
+      return res.status(400).json({
+        error: "Bad Request",
+        message: "Please provide a valid email address",
       });
     }
 
@@ -125,6 +143,13 @@ export async function forgotPassword(req, res) {
       return res.status(400).json({
         error: "Bad Request",
         message: "Please provide an email address",
+      });
+    }
+
+    if (!isValidEmail(email)) {
+      return res.status(400).json({
+        error: "Bad Request",
+        message: "Please provide a valid email address",
       });
     }
 
