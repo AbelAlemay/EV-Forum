@@ -298,7 +298,7 @@ export default function Landing() {
                   className={mode === "login" ? styles.submit : styles.join}
                   type="submit"
                 >
-                  {mode === "login" ? "SUBMIT" : "AGREE AND JOIN"}
+                  {mode === "login" ? "SIGN IN" : "AGREE AND JOIN"}
                 </button>
 
                 {mode === "signup" && (
