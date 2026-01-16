@@ -186,10 +186,7 @@ export async function forgotPassword(req, res) {
     return res.status(200).json({
       message:
         "If an account with that email exists, a password reset link has been sent.",
-      // In production, remove the token from the response
-      // For development/testing purposes, we're including it
-      resetToken:
-        process.env.NODE_ENV === "development" ? resetToken : undefined,
+      resetToken,
     });
   } catch (err) {
     console.log(err);
